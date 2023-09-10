@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.title {
+    background-color: dodgerblue;
+    border: 2px solid black;
+    text-align: center;
+    color:aliceblue;
+    font-weight: bolder;
+    position: sticky;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: inset 0px 0px 2px black;
+}
+
+.element {
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    color: black;
+    height: 100px;
+    width: 90px;
+    text-align: center;
+    margin: 5px;
+    padding: 2px;
+}
+
+.row {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.emptyRow1 {
+    background-color: white;
+    width: 1635px;
+    height: 100px;
+    margin: 0px;
+}
+
+.emptyRow2N3 {
+    background-color: white;
+    width: 1000px;
+    height: 100px;
+    margin: 0px;
+}
+
+#alkaliMetal {
+    background-color: gold;
+}
+#alkalineMetal {
+    background-color: palegreen;
+}
+#nonmetal {
+    background-color: palevioletred;
+}
+#transitionMetal {
+    background-color: plum;
+}
+#lanthanide {
+    background-color: aquamarine;
+}
+#halogen {
+    background-color: dodgerblue;
+}
+#actinide {
+    background-color: pink;
+}
+#unknownProperties {
+    background-color: peru;
+}
+#metalloid {
+    background-color: silver;
+}
+#postTransition {
+    background-color: rosybrown;
+}
+#nobelGas {
+    background-color:slateblue;
+    color: white;
+}
