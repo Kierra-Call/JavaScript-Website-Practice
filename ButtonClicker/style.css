@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CCCCCC;
+    padding: 10px;
+    width: 1000px;
+}
+.searchBar {
+    border: 2px solid black;
+}
+.login {
+    background-color: #2B78E4;
+    color: white;
+    box-shadow: 2px 2px 2px black;
+    border: 2px solid black;
+    width: 60px;
+    padding: 3px;
+}
+.container {
+    width: 1020px;
+    display: flex;
+    margin: auto;
+    /* border: 2px solid red; */
+    gap: 30px;
+    padding: 10px;
+}
+.col1 {
+    flex:2;
+    /* border: 2px solid purple; */
+    padding: 10px;
+
+}
+.col2 {
+    flex:1;
+    /* border: 2px solid orange; */
+    padding: 10px;
+}
+.definition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.col1 span {
+    font-style: italic;
+}
+.italics {
+    font-style: italic;
+}
+.left-definition {
+    text-align: center;
+    justify-content: center;
+}
+p {
+    padding: 20px;
+}
+.likes {
+    background-color: #FFD966;
+    border: 2px solid black;
+    padding: 5px;
+    box-shadow: 2px 2px 2px black;
+    margin-top: 10px;
+}
+.col2 span {
+    font-weight:bold;
+}
+.add-definition {
+    background-color: #93C47D;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+    margin-top: 10px;
+    padding: 3px;
+    width: 120px;
+}
+.defined-by {
+    border: 2px solid black;
+    padding: 10px;
+}
