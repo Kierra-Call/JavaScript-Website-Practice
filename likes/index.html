@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--NAV BAR-->
+    <div class="navbar">
+        <h1>Network</h1>
+    </div>
+    <!-- TITLE  -->
+    <div class="title">
+        <h1>Your Feed</h1>
+    </div>
+    <!-- CONTAINER  -->
+    <div class="container">
+        <!-- COL 1 -->
+        <div class="col1">
+            <!-- ADD AVATAR  -->
+            <div class="add-avatar-container">
+                <div class="center"><img src="user-circle.png" alt="User Circle"></div>
+                <div class="center"><a href="#">Add an avatar</a></div>
+                <div class="center"><h2>James Doe</h2></div>
+            </div>
+        </div>
+        <!-- COL 2  -->
+        <div class="col2">
+            <!-- FEED BOX 1-->
+            <div class="feed-box">
+                <div class="feed-box-top">
+                    <div class="feed-box-name"><h2>Neil M</h2></div>
+                    <div class="feed-box-likes">
+                        <p id="like1" >9 like(s)</p>
+                        <button onclick="likes1()" class="likes">Like</button>
+                    </div>
+                </div>
+                <p class="feed-box-text">I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+            </div>
+            <!-- FEED BOX 2 -->
+            <div class="feed-box">
+                <div class="feed-box-top">
+                    <div class="feed-box-name"><h2>Nichole K</h2></div>
+                    <div class="feed-box-likes">
+                        <p id="like2" >12 like(s)</p>
+                        <button onclick="likes2()" class="likes">Like</button>
+                    </div>
+                </div>
+                <p class="feed-box-text">Just finished my <a href="#">next comic</a>, check it out.</p>
+            </div>
+            <!-- FEED BOX 3 -->
+            <div class="feed-box">
+                <div class="feed-box-top">
+                    <div class="feed-box-name"><h2>Jim R</h2></div>
+                    <div class="feed-box-likes">
+                        <p id="like3" >9 like(s)</p>
+                        <button onclick="likes3()" class="likes">Like</button>
+                    </div>
+                </div>
+                <p class="feed-box-text">I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
