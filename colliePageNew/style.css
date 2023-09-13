@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300&family=Sriracha&display=swap');
+/* ALL  */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+.padding {
+    padding: 5px 10px 5px 10px;
+}
+/* NAV BAR  */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: blanchedalmond;
+    border-bottom: 2px solid black;
+}
+.nav-bar h1 {
+    font-family: 'Sriracha', cursive;
+    color: #FB607F;
+    font-weight: bolder;
+}
+.nav-bar span {
+    color: rebeccapurple;
+    font-family: 'Sriracha', cursive;
+    font-weight: bolder;
+}
+.nav-content img {
+    height: 40px;
+    width: 40px;
+    margin: 0px 10px 0px 10px;
+}
+.nav-content {
+    display: flex;
+    align-items: center;
+}
+.nav-content button {
+    padding: 5px 15px 5px 15px;
+    background-color: #FB607F;
+    color: white;
+    font-weight: bold;
+    margin: 0px 5px 0px 5px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+/* BANNER  */
+.banner {
+    width: 900px;
+    margin: auto;
+}
+.banner-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.banner hr {
+    border-top: 3px solid rebeccapurple;
+}
+/* CONTENT  */
+.container {
+    width: 900px;
+    display: flex;
+    margin: auto;
+    /* border: 2px solid green; */
+}
+.col1 {
+    flex:2;
+}
+.col2 {
+    flex:1;
+}
+.info-box {
+    border: 2px solid black;
+    margin: 10px;
+}
+.info-box h2 {
+    background-color: blanchedalmond;
+    padding: 5px;
+    border-bottom: 2px solid black;
+}
+.box-bottom {
+    display: flex;
+    align-items: center;
+    
+}
+.box-bottom img {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+}
+.info-box p {
+    padding: 10px 10px 10px 10px;
+}

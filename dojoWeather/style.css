@@ -67,10 +67,6 @@ img {
     color:dodgerblue;
 }
 /* COOKIE BAR  */
-.cookie-container {
-    /* width: 900px; */
-    /* margin: auto; */
-}
 .cookie-bar {
     display: flex;
     align-items: center;
