@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV BAR  -->
+    <div class="nav-bar">
+      <h1>DojoWeather</h1>
+      <div class="links">
+        <h2 onclick="alert('Loading weather report...')" >Burbank</h2>
+        <h2 onclick="alert('Loading weather report...')" >Chicago</h2>
+        <h2 onclick="alert('Loading weather report...')" >Dallas</h2>
+      </div>
+    </div>
+    <!-- BANNER  -->
+    <div class="banner-container">
+      <div class="banner">
+        <h2>San Jose</h2>
+        <div class="drop-down">
+          <p>show temperature in</p>
+          <select onchange="degreesF(this)" name="degrees">
+            <option value="°C">°C</option>
+            <option value="°F">°F</option>
+          </select>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <!-- COLUMNS  -->
+    <div class="container">
+      <!-- COLUMMN 1 -->
+      <div class="col">
+        <div class="temp-top">
+          <h2>Today</h2>
+          <img src="some_rain.png" alt="some rain" />
+          <p>some rain</p>
+        </div>
+        <div class="temps">
+          <h4 id="temp1" class="high">24°</h4>
+          <h4 id="temp2" class="low">18°</h4>
+        </div>
+      </div>
+      <!-- COLUMMN 2 -->
+      <div class="col">
+        <div class="temp-top">
+          <h2>Tomorrow</h2>
+          <img src="some_sun.png" alt="some sun" />
+          <p>some sun</p>
+        </div>
+        <div class="temps">
+          <h4 id="temp3" class="high">27°</h4>
+          <h4 id="temp4" class="low">19°</h4>
+        </div>
+      </div>
+      <!-- COLUMMN 3 -->
+      <div class="col">
+        <div class="temp-top">
+          <h2>Friday</h2>
+          <img src="some_clouds.png" alt="some clouds" />
+          <p>some clouds</p>
+        </div>
+        <div class="temps">
+          <h4 id="temp5" class="high">21°</h4>
+          <h4 id="temp6" class="low">16°</h4>
+        </div>
+      </div>
+      <!-- COLUMMN 4 -->
+      <div class="col">
+        <div class="temp-top">
+          <h2>Saturday</h2>
+          <img src="some_sun.png" alt="some sun" />
+          <p>some sun</p>
+        </div>
+        <div class="temps">
+          <h4 id="temp7" class="high">26°</h4>
+          <h4 id="temp8" class="low">21°</h4>
+        </div>
+      </div>
+    </div>
+    <!-- COOKIE BAR -->
+    <div id="cookies" class="cookie-container">
+      <div class="cookie-bar">
+        <img src="cookie.png" alt="cookie" />
+        <div class="cookie-info">
+          <h3>Stop! Cookie time</h3>
+          <p>
+            We use cookies (sadly not the edible ones) to personalize content
+            and ads, to provide social media features and to analyse our
+            traffic. <a href="#">Read more...</a>
+          </p>
+        </div>
+        <button onclick="removeCookieBar()" >I Accept</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
