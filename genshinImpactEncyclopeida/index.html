@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Dog Breed Comparator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- BANNER  -->
+    <div class="container">
+      <div class="banner">
+        <img src="./assets/otherImages/logo.png" alt="">
+        <h1>Welcome to the <span>Genshin Impact</span> Information Tool</h1>
+      </div>
+      <!-- COLUMNS  -->
+      <div class="container-2">
+        <div class="col">
+            <select onchange="getData(this.value)" onchange="imageChange(this.value)" name="Select Dog Breed">
+                <option value="null">Click to Select Option</option>
+                <option value="wolf-s-gravestone">Wolf's Gravestone</option>
+            </select>
+            <p id="test">change me</p>
+            <img id="dynamicPhoto" src="./assets/corgi.png" alt="dynamic photo">
+        </div>
+      </div>
+    </div>
+    <!--CONTAINER ENDING DIV-->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&family=Signika&family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Roboto', cursive; */
+    font-family: 'Signika', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    height: 900px;
+    margin-top: 10px;
+
+}
+
+body {
+    background-color: #85CDCA;
+    /* background-color: lightgray; */
+}
+
+/* BANNER  */
+.banner img {
+}
+
+.banner span {
+    color: #E27D5F;
+}
+
+.banner {
+    background-image: url("https://images7.alphacoders.com/116/1161810.jpg");
+    color: white;
+    width: 1200px;
+    height: 600px;;
+    /* text-align: center; */
+    /* background: rgba(0,0,0,0.2); */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    font-size: larger;
+}
+
+/* COLUMNS  */
+.container2 {
+    display: flex;
+
+}
+.col {
+    flex:1;
+}
