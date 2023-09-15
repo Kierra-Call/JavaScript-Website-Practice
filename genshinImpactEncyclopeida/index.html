@@ -3,29 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Dog Breed Comparator</title>
+    <title>Genshin Impact Encyclopedia</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- BANNER  -->
-    <div class="container">
-      <div class="banner">
-        <img src="./assets/otherImages/logo.png" alt="">
-        <h1>Welcome to the <span>Genshin Impact</span> Information Tool</h1>
-      </div>
-      <!-- COLUMNS  -->
-      <div class="container-2">
-        <div class="col">
-            <select onchange="getData(this.value)" onchange="imageChange(this.value)" name="Select Dog Breed">
-                <option value="null">Click to Select Option</option>
-                <option value="wolf-s-gravestone">Wolf's Gravestone</option>
-            </select>
-            <p id="test">change me</p>
-            <img id="dynamicPhoto" src="./assets/corgi.png" alt="dynamic photo">
+    <div class="container-top">
+      <!-- NAV BAR  -->
+      <div class="nav-bar">
+        <div class="nav-left flex">
+          <img
+            class="primogem"
+            src="./assets/otherImages/primogem.png"
+            alt="Primogem"
+          />
+          <img
+            class="logo"
+            src="./assets/otherImages/logo.png"
+            alt="Genshin Impact"
+          />
+          <h1>Encyclopedia</h1>
+        </div>
+        <div class="nav-right flex">
+          <ol class="flex">
+            <li><a href="#">Characters</a></li>
+            <li><a href="#">Weapons</a></li>
+            <li><a href="#">Artifacts</a></li>
+          </ol>
+          <img
+            class="primogem"
+            src="./assets/otherImages/primogem.png"
+            alt="Primogem"
+          />
         </div>
       </div>
+      <h1 class="title">Welcome to the Genshin Impact Encyclopedia</h1>
     </div>
-    <!--CONTAINER ENDING DIV-->
+
+    <!-- BLOCK 1  -->
+    <div class="container">
+      <div id="backGrab0" class="block-1 standard">
+        <img
+          class="character-image"
+          id="dynamicCharPhoto"
+          src="./assets/characters/albedo.png"
+          alt=""
+        />
+        <div class="character-block-right">
+          <select
+            onchange="getCharData(this.value)"
+            name="Characters"
+            id="character-select"
+          >
+            <option value="null">Click to Select Character</option>
+            <option value="albedo">Albedo</option>
+            <option value="aloy">Aloy</option>
+            <option value="amber">Amber</option>
+            <option value="arataki-itto">Arataki Itto</option>
+            <option value="ayaka">Ayaka</option>
+            <option value="ayato">Ayato</option>
+            <option value="barbara">Barbara</option>
+            <option value="beidou">Beidou</option>
+            <option value="bennett">Bennett</option>
+            <option value="chongyun">Chongyun</option>
+            <option value="collei">Collei</option>
+            <option value="diluc">Diluc</option>
+            <option value="diona">Diona</option>
+            <option value="eula">Eula</option>
+            <option value="fischl">Fischl</option>
+            <option value="ganyu">Ganyu</option>
+            <option value="gorou">Gorou</option>
+            <option value="hu-tao">Hu Tao</option>
+            <option value="jean">Jean</option>
+            <option value="kaeya">Kaeya</option>
+            <option value="kazuha">Kazuha</option>
+            <option value="keqing">Keqing</option>
+            <option value="klee">Klee</option>
+            <option value="kokomi">Kokomi</option>
+            <option value="kuki-shinobu">Kuki Shinobu</option>
+            <option value="lisa">Lisa</option>
+            <option value="mona">Mona</option>
+            <option value="ningguang">Ningguang</option>
+            <option value="noelle">Noelle</option>
+            <option value="qiqi">Qiqi</option>
+            <option value="raiden">Raiden</option>
+            <option value="razor">Razor</option>
+            <option value="rosaria">Rosaria</option>
+            <option value="sara">Sara</option>
+            <option value="Sayu">Sayu</option>
+            <option value="shenhe">Shenhe</option>
+            <option value="shikanoin-heizou">Shikanoin Heizou</option>
+            <option value="sucrose">Sucrose</option>
+            <option value="tartaglia">Tartaglia</option>
+            <option value="thoma">Thoma</option>
+            <option value="tighnari">Tighnari</option>
+            <option value="venti">Venti</option>
+            <option value="xiangling">Xiangling</option>
+            <option value="xinyan">Xinyan</option>
+            <option value="yae-miko">Yae Miko</option>
+            <option value="yanfei">Yanfei</option>
+            <option value="yelan">Yelan</option>
+            <option value="yoimiya">Yoimiya</option>
+            <option value="yun-jin">Yun Jin</option>
+            <option value="zhongli">Zhongli</option>
+          </select>
+          <div class="name-bar flex">
+            <h1 id="charName">Name</h1>
+            <div class="vision flex">
+              <h1 id="vision">Vision</h1>
+              <img
+                id="dynamicVisionPhoto"
+                src="./assets/vision/anemo.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <hr />
+          <div class="char-info-1">
+            <h2 id="charTitle">Select a character to read more</h2>
+            <p id="charDescription"> </p>
+            <h3 id="charWeaponType"> </h3>
+            <h2 id="charRarity"> </h2>
+            <p id="charAffiliation"> </p>
+            <p id="constellation"> </p>
+          </div>
+          <div class="spacer"></div>
+          <div class="char-info-2"></div>
+        </div>
+      </div>
+      <div class="flex gap">
+        <div id="backGrab1" class="col  standard">
+          <h2>Normal Attack</h2>
+          <p id="normalAttackInfo">Select a character to read more</p>
+        </div>
+        <div id="backGrab2" class="col  standard">
+          <h2>Elemental Attack</h2>
+          <p id="elementalAttackInfo">Select a character to read more</p>
+        </div>
+        <div id="backGrab3" class="col  standard">
+          <h2>Elemental Burst</h2>
+          <p id="elementalBurstInfo">Select a character to read more</p>
+        </div>
+      </div>
+      <!--CONTAINER ENDING DIV-->
+    </div>
+    <!-- </div> -->
     <script src="script.js"></script>
   </body>
 </html>
