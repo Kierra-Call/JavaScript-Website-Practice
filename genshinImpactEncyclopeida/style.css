@@ -31,28 +31,44 @@ body {
 
 .standard {
     background-color: lavenderblush;
-    /* background-color: thistle; */
+    border: 2px solid lightpink;
+    box-shadow: inset 0px 0px 10px lightpink;
 }
 .Dendro {
     background-color: palegreen;
+    border: 2px solid green;
+    box-shadow: inset 0px 0px 10px green;
+
 }
 .Hydro {
     background-color: dodgerblue;
+    border: 2px solid blue;
+    box-shadow: inset 0px 0px 10px blue;
 }
 .Cryo {
     background-color: lightskyblue;
+    border: 2px solid dodgerblue;
+    box-shadow: inset 0px 0px 10px dodgerblue;
 }
 .Pyro {
     background-color: lightcoral;
+    border: 2px solid red;
+    box-shadow: inset 0px 0px 10px red;
 }
 .Anemo {
     background-color: lightcyan;
+    border: 2px solid lightblue;
+    box-shadow: inset 0px 0px 10px lightblue;
 }
 .Geo {
     background-color: lightgoldenrodyellow;
+    border: 2px solid goldenrod;
+    box-shadow: inset 0px 0px 10px goldenrod;
 }
 .Electro {
     background-color: mediumorchid;
+    border: 2px solid rebeccapurple;
+    box-shadow: inset 0px 0px 10px rebeccapurple;
 }
 
 /* NAV BAR  */
@@ -138,7 +154,7 @@ hr {
     height: 50px;
 }
 .char-info-1 {
-    height: 200px;
+    height: 100px;
 }
 
 .char-info-2 {
@@ -154,10 +170,26 @@ hr {
 .col {
     flex:1 ;
     /* background-color: lavenderblush; */
-    height: 500px;
+    height: auto;
     padding: 20px;
     margin: 10px;
+    justify-content: flex-start;
 }
 .gap {
     gap: 10px;
+}
+#cols {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#characterImageFull {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    bottom: 100px;
+    left: 300px;
+}
+#stars {
+    height: 20px;
+    width: auto;
 }

@@ -25,7 +25,7 @@
         </div>
         <div class="nav-right flex">
           <ol class="flex">
-            <li><a href="#">Characters</a></li>
+            <li><a href="#character-select">Characters</a></li>
             <li><a href="#">Weapons</a></li>
             <li><a href="#">Artifacts</a></li>
           </ol>
@@ -54,7 +54,7 @@
             name="Characters"
             id="character-select"
           >
-            <option value="null">Click to Select Character</option>
+            <option select disabled>Click to Select Character</outgroup></option>
             <option value="albedo">Albedo</option>
             <option value="aloy">Aloy</option>
             <option value="amber">Amber</option>
@@ -74,8 +74,8 @@
             <option value="gorou">Gorou</option>
             <option value="hu-tao">Hu Tao</option>
             <option value="jean">Jean</option>
+            <option value="kazuha">Kaedehara Kazuha</option>
             <option value="kaeya">Kaeya</option>
-            <option value="kazuha">Kazuha</option>
             <option value="keqing">Keqing</option>
             <option value="klee">Klee</option>
             <option value="kokomi">Kokomi</option>
@@ -123,27 +123,31 @@
             <p id="charDescription"> </p>
             <h3 id="charWeaponType"> </h3>
             <h2 id="charRarity"> </h2>
+            <img id="stars" src="./assets/otherImages/5star.png" alt="placeholder">
             <p id="charAffiliation"> </p>
             <p id="constellation"> </p>
+            <img id="characterImageFull" src="./assets/characters/albedofull.png" alt="placeholder">
           </div>
           <div class="spacer"></div>
           <div class="char-info-2"></div>
         </div>
       </div>
-      <div class="flex gap">
+      <div id="cols" class="flex gap">
         <div id="backGrab1" class="col  standard">
           <h2>Normal Attack</h2>
-          <p id="normalAttackInfo">Select a character to read more</p>
+          <p id="normalAttackInfo">Select a character above to read more</p>
         </div>
         <div id="backGrab2" class="col  standard">
           <h2>Elemental Attack</h2>
-          <p id="elementalAttackInfo">Select a character to read more</p>
+          <p id="elementalAttackInfo">Select a character above to read more</p>
         </div>
         <div id="backGrab3" class="col  standard">
           <h2>Elemental Burst</h2>
-          <p id="elementalBurstInfo">Select a character to read more</p>
+          <p id="elementalBurstInfo">Select a character above to read more</p>
         </div>
       </div>
+
+
       <!--CONTAINER ENDING DIV-->
     </div>
     <!-- </div> -->

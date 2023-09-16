@@ -3,9 +3,11 @@ async function getCharData(name) {
     var response = await fetch(`https://api.genshin.dev/characters/${name}`);
     var coderData = await response.json();
 
+    starChange(coderData.rarity);
     imageChange(name);
     visionChange(coderData.vision);
     backgroundChange(coderData.vision);
+    imageChangeFull(name);
 
     var charName = document.querySelector("#charName");
     charName.innerText = coderData.name;
@@ -32,6 +34,11 @@ async function getCharData(name) {
 
 
 }
+function imageChangeFull(name) {
+    var photo = document.querySelector("#characterImageFull");
+    photo.src = `./assets/characters/${name}full.png`;
+    photo.alt = name + " full";
+}
 
 function imageChange(name) {
     var photo = document.querySelector("#dynamicCharPhoto");
@@ -48,5 +55,17 @@ function backgroundChange(vision) {
         document.getElementById("backGrab"+ i).classList.remove('Geo', 'Hydro', 'Anemo', 'Dendro', 'Electro', 'Cryo', 'Pyro');
         document.getElementById("backGrab"+ i).classList.remove('standard');
         document.getElementById("backGrab"+ i).classList.add(vision);
+    }
+}
+function starChange(rarity) {
+    if (rarity === 5) {
+        var photo = document.querySelector("#stars");
+        photo.src = `./assets/otherImages/${rarity}star.png`;
+        photo.alt = "5 stars";
+    }
+    else {
+        var photo = document.querySelector("#stars");
+        photo.src = `./assets/otherImages/${rarity}star.png`;
+        photo.alt = "4 stars";
     }
 }
