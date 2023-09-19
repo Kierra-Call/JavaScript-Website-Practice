@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- NAV BAR  -->
     <div class="container-top">
-      <!-- NAV BAR  -->
       <div class="nav-bar">
         <div class="nav-left flex">
           <img
@@ -45,16 +45,17 @@
         <img
           class="character-image"
           id="dynamicCharPhoto"
-          src="./assets/characters/albedo.png"
+          src="./assets/otherImages/Empty.png"
           alt=""
         />
         <div class="character-block-right">
+          <h1>Character Lookup</h1>
           <select
             onchange="getCharData(this.value)"
             name="Characters"
             id="character-select"
           >
-            <option select disabled>Click to Select Character</outgroup></option>
+            <option select disabled>Click to Select Character</option>
             <option value="albedo">Albedo</option>
             <option value="aloy">Aloy</option>
             <option value="amber">Amber</option>
@@ -107,12 +108,12 @@
             <option value="zhongli">Zhongli</option>
           </select>
           <div class="name-bar flex">
-            <h1 id="charName">Name</h1>
+            <h1 id="charName">Select Character</h1>
             <div class="vision flex">
-              <h1 id="vision">Vision</h1>
+              <h1 id="vision"></h1>
               <img
                 id="dynamicVisionPhoto"
-                src="./assets/vision/anemo.png"
+                src="./assets/otherImages/Empty.png"
                 alt=""
               />
             </div>
@@ -120,34 +121,240 @@
           <hr />
           <div class="char-info-1">
             <h2 id="charTitle">Select a character to read more</h2>
-            <p id="charDescription"> </p>
-            <h3 id="charWeaponType"> </h3>
-            <h2 id="charRarity"> </h2>
-            <img id="stars" src="./assets/otherImages/5star.png" alt="placeholder">
-            <p id="charAffiliation"> </p>
-            <p id="constellation"> </p>
-            <img id="characterImageFull" src="./assets/characters/albedofull.png" alt="placeholder">
+            <p id="charDescription"></p>
+            <h3 id="charWeaponType"></h3>
+            <h2 id="charRarity"></h2>
+            <img
+              id="stars"
+              src="./assets/otherImages/Empty.png"
+              alt="placeholder"
+            />
+            <p id="charAffiliation"></p>
+            <p id="constellation"></p>
+            <img
+              id="characterImageFull"
+              src="./assets/otherImages/Empty.png"
+              alt="placeholder"
+            />
           </div>
-          <div class="spacer"></div>
+          <!-- <div class="spacer"></div> -->
           <div class="char-info-2"></div>
         </div>
       </div>
+
+      <!-- ATTACK COLUMNS   -->
       <div id="cols" class="flex gap">
-        <div id="backGrab1" class="col  standard">
+        <div id="backGrab1" class="col standard">
+          <img
+            class="primogem2"
+            src="./assets/otherImages/primogem.png"
+            alt="Primogem"
+          />
           <h2>Normal Attack</h2>
           <p id="normalAttackInfo">Select a character above to read more</p>
         </div>
-        <div id="backGrab2" class="col  standard">
+        <div id="backGrab2" class="col standard">
+          <img
+            class="primogem2"
+            src="./assets/otherImages/primogem.png"
+            alt="Primogem"
+          />
           <h2>Elemental Attack</h2>
           <p id="elementalAttackInfo">Select a character above to read more</p>
         </div>
-        <div id="backGrab3" class="col  standard">
+        <div id="backGrab3" class="col standard">
+          <img
+            class="primogem2"
+            src="./assets/otherImages/primogem.png"
+            alt="Primogem"
+          />
           <h2>Elemental Burst</h2>
           <p id="elementalBurstInfo">Select a character above to read more</p>
         </div>
       </div>
 
-
+      <!-- WEAPON SQUARE  -->
+      <div class="block-1 standard titleblock">
+        <h1 class="title">Weapons</h1>
+      </div>
+      <div class="block-1 standard">
+        <div class="character-block-right">
+          <h1>Weapon Lookup</h1>
+          <select onchange="getWeaponData(this.value)">
+            <option select disabled>Click to Select Weapon</option>
+            <option value="akuoumaru">Akuoumaru</option>
+            <option value="alley-hunter">Alley Hunter</option>
+            <option value="amber-catalyst">Amber Catalyst</option>
+            <option value="amenoma-kageuchi">Amenoma Kageuchi</option>
+            <option value="amos-bow">Amos Bow</option>
+            <option value="apprentice-s-notes">Apprentice's Notes</option>
+            <option value="aquila-favonia">Aquila Favonia</option>
+            <option value="beginner-s-protector">Beginner's Protector</option>
+            <option value="black-tassel">Black Tassel</option>
+            <option value="blackcliff-amulet">Blackcliff Amulet</option>
+            <option value="blackcliff-longsword">Blackcliff Longsword</option>
+            <option value="blackcliff-pole">Blackcliff Pole</option>
+            <option value="blackcliff-slasher">Blackcliff Slasher</option>
+            <option value="blackcliff-warbow">Blackcliff Warbow</option>
+            <option value="bloodtainted-greatsword">
+              Bloodtainted Greatsword
+            </option>
+            <option value="calamity-queller">Calamity Queller</option>
+            <option value="cinnabar -spindle">Cinnabar Spindle</option>
+            <option value="compound-bow">Compound Bow</option>
+            <option value="cool-steel">Cool Steel</option>
+            <option value="crescent-pike">Crescent Pike</option>
+            <option value="dark-iron-sword">Dark Iron Sword</option>
+            <option value="deathmatch">Deathmatch</option>
+            <option value="debate-club">Debate Club</option>
+            <option value="dodoco-tales">Dodoco Tales</option>
+            <option value="dragon-s-bane">Dragon's Bane</option>
+            <option value="dragonspine-spear">Dragonspine Spear</option>
+            <option value="dull-blade">Dull Blade</option>
+            <option value="ebony-bow">Ebony Bow</option>
+            <option value="elegy-for-the-end">Elegy for the End</option>
+            <option value="emerald-orb">Emerald Orb</option>
+            <option value="engulfing-lightning">Engulfing Lightning</option>
+            <option value="eberlasting-moonglow">Everlasting Moonglow</option>
+            <option value="eye-of-perception">Eye of Perception</option>
+            <option value="favonius-codex">Favonius Codex</option>
+            <option value="favonius-greatsword">Favonius Greatsword</option>
+            <option value="favonius-lance">Favonius Lance</option>
+            <option value="favonius-sword">Favonius Sword</option>
+            <option value="favonius-warbow">Favonius Warbow</option>
+            <option value="ferrous-shadow">Ferrous Shadow</option>
+            <option value="festering-desire">Festering Desire</option>
+            <option value="fillet-blade">Fillet Blade</option>
+            <option value="freedom-sworn">Freedom Sworn</option>
+            <option value="frostbearer">Frostbearer</option>
+            <option value="hakushin-ring">Hakushin Ring</option>
+            <option value="halberd">Halberd</option>
+            <option value="hamayumi">Hamayumi</option>
+            <option value="haran-geppaku-futsu">Haran Geppaku Futsu</option>
+            <option value="harbinger-of-dawn">Harbinger of Dawn</option>
+            <option value="hunter-s-bow">Hunter's Bow</option>
+            <option value="iron-point">Iron Point</option>
+            <option value="iron-sting">Iron Sting</option>
+            <option value="kagura's-verity">kagura's Verity</option>
+            <option value="katsuragikiri-nagamasa">
+              Katsuragikiri Nagamasa
+            </option>
+            <option value="kitain-cross-spear">Kitain Cross Spear</option>
+            <option value="lion-s-roar">Lion's Roar</option>
+            <option value="lithic-blade">Lithic Blade</option>
+            <option value="lithic-spear">Lithic Spear</option>
+            <option value="lost-prayer-to-the-sacred-winds">
+              Lost Prayer to the Sacred Winds
+            </option>
+            <option value="luxurious-sea-lord">Luxurious Sea Lord</option>
+            <option value="magic-guide">Magic Guide</option>
+            <option value="mappa-mare">Mappa Mare</option>
+            <option value="memory-of-dust">Memory of Dust</option>
+            <option value="messenger">Messenger</option>
+            <option value="mistsplitter-reforged">Mistsplitter Reforged</option>
+            <option value="mitternachts-waltz">Mitternachts Waltz</option>
+            <option value="mouun's-moon">Mouun's-Moon</option>
+            <option value="oathsworn-eye">Oathsworn Eye</option>
+            <option value="old-merc-s-pal">Old Merc's Pal</option>
+            <option value="otherworldly-story">Otherworldly Story</option>
+            <option value="pocket-grimoire">Pocket Grimoire</option>
+            <option value="polar-star">Polar Star</option>
+            <option value="predator">Predator</option>
+            <option value="primordial-jade-cutter">
+              Primordial Jade Cutter
+            </option>
+            <option value="primordial-jade-winged-spear">
+              Primordial Jade Winged Spear
+            </option>
+            <option value="prototype-archaic">Prototype Archaic</option>
+            <option value="prototype-crescent">Prototype Crescent</option>
+            <option value="prototype-grudge">Prototype Grudge</option>
+            <option value="prototype-malice">Prototype Malice</option>
+            <option value="prototype-rancour">Prototype Rancour</option>
+            <option value="quartz">Quartz</option>
+            <option value="rainslasher">Rainslasher</option>
+            <option value="raven-bow">Raven Bow</option>
+            <option value="recurve-bow">Recurve Bow</option>
+            <option value="redhorn-stonethresher">Redhorn Stonethresher</option>
+            <option value="royal-bow">Royal Bow</option>
+            <option value="royal-greatsword">Royal Greatsword</option>
+            <option value="royal-grimoire">Royal Grimoire</option>
+            <option value="royal-longsword">Royal Longsword</option>
+            <option value="royal-spear">Royal Spear</option>
+            <option value="rust">Rust</option>
+            <option value="sacrificial-bow">Sacrificial Bow</option>
+            <option value="sacrificial-fragments">Sacrificial Fragments</option>
+            <option value="sacrificial-greatsword">
+              Sacrificial Greatsword
+            </option>
+            <option value="sacrificial-sword">Sacrificial Sword</option>
+            <option value="seasoned-hunter-s-bow">Seasoned Hunter's Bow</option>
+            <option value="serpent-spine">Serpent Spine</option>
+            <option value="sharpshooter-s-oath">Sharpshooter's Oath</option>
+            <option value="silver-sword">Silver Sword</option>
+            <option value="skyrider-greatsword">Skyrider Greatsword</option>
+            <option value="skyrider-sword">Skyrider Sword</option>
+            <option value="skyward-atlas">Skyward Atlas</option>
+            <option value="skyward-blade">Skyward Blade</option>
+            <option value="skyward-harp">Skyward Harp</option>
+            <option value="skyward-pride">Skyward Pride</option>
+            <option value="skyward-spine">Skyward Spine</option>
+            <option value="slingshot">Slingshot</option>
+            <option value="snow-tombed-starsilver">
+              Snow Tombed Starsilver
+            </option>
+            <option value="solar-pearl">Solar Pearl</option>
+            <option value="song-of-broken-pines">Song of Broken Pines</option>
+            <option value="staff-of-homa">Staff of Homa</option>
+            <option value="summit-shaper">Summit Shaper</option>
+            <option value="sword-of-descension">Sword of Descension</option>
+            <option value="the-alley-flash">The Alley Flash</option>
+            <option value="the-bell">The Bell</option>
+            <option value="the-black-sword">The Black Sword</option>
+            <option value="the-catch">The Catch</option>
+            <option value="the-flute">The Flute</option>
+            <option value="the-stringless">The Stringless</option>
+            <option value="the-unforged">The Unforged</option>
+            <option value="the-viridescent-hunt">The Viridescent Hunt</option>
+            <option value="the-widsith">The Widsith</option>
+            <option value="thrilling-tales-of-dragon-slayers">
+              Thrilling Tales of Dragon Slayers
+            </option>
+            <option value="thundering-pulse">Thundering Pulse</option>
+            <option value="traveler-s-handy-sword">
+              Traveler's Handy Sword
+            </option>
+            <option value="twin-nephrite">Twin Nephrite</option>
+            <option value="vortex-vanquisher">Vortex Vanquisher</option>
+            <option value="waster-greatsword">Waster Greatsword</option>
+            <option value="wavebreaker's-fin">Wavebreaker's Fin</option>
+            <option value="white-iron-greatsword">White Iron Greatsword</option>
+            <option value="white-tassel">White Tassel</option>
+            <option value="whiteblind">Whiteblind</option>
+            <option value="windblume-ode">Windblume Ode</option>
+            <option value="wine-and-song">Wine and Song</option>
+            <option value="wolf-s-gravestone">Wolf's Gravestone</option>
+          </select>
+          <h1 id="weaponName">Name</h1>
+          <h3 id="weaponType">Type</h3>
+          <hr>
+          <h3 id="weaponRarity">Rarity</h3>
+          <img id="dynamicStar" src="./assets/otherImages/5star.png" alt="PLaceholder">
+          <h1 id="weaponBaseAttk">Base Attack</h1>
+          <h3 id="weaponSubStat">SubStat</h3>
+          <h3 id="weaponPassName">Passive Name</h3>
+          <p id="weaponPassDesc">Passive Description</p>
+          <h4 id="weaponAscMat">Ascension Material</h4>
+        </div>
+        <img id="dynamicWeapon" src="./assets/weapons/akuoumaru.png" alt="PLaceholder">
+      </div>
+      <!-- SIDE NAV BAR  -->
+      <div id="mySidenav" class="sidenav">
+        <a href="#" id="home">Home</a>
+        <a href="#" id="characters">Characters</a>
+        <a href="#" id="weapons">Weapons</a>
+        <a href="#" id="artifacts">Artifacts</a>
+      </div>
       <!--CONTAINER ENDING DIV-->
     </div>
     <!-- </div> -->

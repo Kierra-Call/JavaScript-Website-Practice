@@ -1,195 +1,260 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&family=Signika&family=Sriracha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&family=Signika&family=Sriracha&display=swap");
 body {
-    background-color: lavender;
+  background-color: lavender;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Signika', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Signika", sans-serif;
 }
 
 .container-top {
-    background-image: url("https://images7.alphacoders.com/116/1161810.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* <= This one */
-    height: 500px;
-    margin: 0 auto;
-    width: auto;
-  }
+  background-image: url("https://images7.alphacoders.com/116/1161810.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* <= This one */
+  height: 500px;
+  margin: 0 auto;
+  width: auto;
+}
 
 .flex {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .padding {
-    padding: 5px 10px;
+  padding: 5px 10px;
 }
 
 .standard {
-    background-color: lavenderblush;
-    border: 2px solid lightpink;
-    box-shadow: inset 0px 0px 10px lightpink;
+  background-color: lavenderblush;
+  border: 2px solid lightpink;
+  box-shadow: inset 0px 0px 10px lightpink;
 }
 .Dendro {
-    background-color: palegreen;
-    border: 2px solid green;
-    box-shadow: inset 0px 0px 10px green;
-
+  background-color: palegreen;
+  border: 2px solid green;
+  box-shadow: inset 0px 0px 10px green;
 }
 .Hydro {
-    background-color: dodgerblue;
-    border: 2px solid blue;
-    box-shadow: inset 0px 0px 10px blue;
+  background-color: lightseagreen;
+  border: 2px solid blue;
+  box-shadow: inset 0px 0px 10px blue;
 }
 .Cryo {
-    background-color: lightskyblue;
-    border: 2px solid dodgerblue;
-    box-shadow: inset 0px 0px 10px dodgerblue;
+  background-color: lightskyblue;
+  border: 2px solid dodgerblue;
+  box-shadow: inset 0px 0px 10px dodgerblue;
 }
 .Pyro {
-    background-color: lightcoral;
-    border: 2px solid red;
-    box-shadow: inset 0px 0px 10px red;
+  background-color: lightcoral;
+  border: 2px solid red;
+  box-shadow: inset 0px 0px 10px red;
 }
 .Anemo {
-    background-color: lightcyan;
-    border: 2px solid lightblue;
-    box-shadow: inset 0px 0px 10px lightblue;
+  background-color: lightcyan;
+  border: 2px solid lightblue;
+  box-shadow: inset 0px 0px 10px lightblue;
 }
 .Geo {
-    background-color: lightgoldenrodyellow;
-    border: 2px solid goldenrod;
-    box-shadow: inset 0px 0px 10px goldenrod;
+  background-color: lightgoldenrodyellow;
+  border: 2px solid goldenrod;
+  box-shadow: inset 0px 0px 10px goldenrod;
 }
 .Electro {
-    background-color: mediumorchid;
-    border: 2px solid rebeccapurple;
-    box-shadow: inset 0px 0px 10px rebeccapurple;
+  background-color: mediumorchid;
+  border: 2px solid rebeccapurple;
+  box-shadow: inset 0px 0px 10px rebeccapurple;
 }
 
 /* NAV BAR  */
 .nav-bar {
-    display: flex;
-    justify-content: space-around;
-    /* background-image: linear-gradient(to bottom right, black, slategray); */
-    background-color: rgba(0, 0, 0, 0.3);
-    color: white;
-    position: sticky;
-    top: 0px;
+  display: flex;
+  justify-content: space-around;
+  /* background-image: linear-gradient(to bottom right, black, slategray); */
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  position: sticky;
+  top: 0px;
 }
 
 .logo {
-    height: 50px;
-    width: auto;
-    margin: 5px 10px;
+  height: 50px;
+  width: auto;
+  margin: 5px 10px;
 }
 
 .primogem {
-    height: 30px;
-    width: auto;
-    margin: 5px 10px;
+  height: 30px;
+  width: auto;
+  margin: 5px 10px;
 }
 
 .nav-right li {
-    list-style-type: none;
-    padding: 5px 10px;
+  list-style-type: none;
+  padding: 5px 10px;
 }
 
 ol a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .title {
-    text-align: center;
-    color: white;
-    margin: 150px 10px;
-    font-size:50px;
+  text-align: center;
+  color: white;
+  margin: 150px 10px;
+  font-size: 60px;
+  text-shadow:
+  1px 1px 0 #000,
+  -1px 1px 0 #000,
+  -1px -1px 0 #000,
+  1px -1px 0 #000;
 }
 
 /* CONTENT  */
 
 .container {
-    margin: auto;
-    width: 1200px;
-    
+  margin: auto;
+  width: 1200px;
 }
 .block-1 {
-    margin: 10px;
-    display: flex;
+  margin: 10px;
+  display: flex;
 }
 .block-1 select {
-    width: 600px;
-    height: 40px;
-    border-radius: 5px;
-    margin: 10px 20px;
-    font-size: large;
-    padding: 5px;
-    border: none;
+  width: 600px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 10px 20px;
+  font-size: large;
+  padding: 5px;
+  border: none;
 }
 .character-image {
-    height: 700px;
-    width: 400px;
-    margin: 10px;
+  height: 700px;
+  width: auto;
+  margin: 10px;
 }
 
 .name-bar {
-    justify-content: space-between;
-    padding: 5px;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 .vision img {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
 }
 
 hr {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 .spacer {
-    height: 50px;
+  height: 50px;
 }
 .char-info-1 {
-    height: 100px;
+  height: 100px;
 }
 
 .char-info-2 {
-    height: 300px;
+  height: 300px;
 }
 .char-info-2 h2 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 .character-block-right {
-    margin: 20px;
-    width: 650px;
+  margin: 20px;
+  width: 650px;
 }
 .col {
-    flex:1 ;
-    /* background-color: lavenderblush; */
-    height: auto;
-    padding: 20px;
-    margin: 10px;
-    justify-content: flex-start;
+  flex: 1;
+  /* background-color: lavenderblush; */
+  height: auto;
+  padding: 20px;
+  margin: 10px;
+  justify-content: flex-start;
 }
 .gap {
-    gap: 10px;
+  gap: 10px;
 }
 #cols {
-    align-items: flex-start;
-    justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 #characterImageFull {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    bottom: 100px;
-    left: 300px;
+  width: auto;
+  height: 300px;
+  /* position: relative; */
+  /* bottom: 100px; */
+  /* left: 0px; */
 }
 #stars {
-    height: 20px;
-    width: auto;
+  height: 20px;
+  width: auto;
+}
+.primogem2 {
+  height: 30px;
+  width: auto;
+  margin: 5px 10px;
+  position: relative;
+  left: 40%;
+  /* top: -40px; */
+}
+
+/* WEAPONS */
+.titleblock {
+  height: 350px;
+  width: auto;
+  background-image: url(https://i.redd.it/b5emkqe99qh71.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* <= This one */
+
+}
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: fixed; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+/* SLIDENAV BAR  */
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#home {
+  top: 20px;
+  background-image: url(https://upload-os-bbs.hoyolab.com/upload/2022/07/26/169856605/5b05eeab036bfc56e3071a87972eacb0_2993445858013996256.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80);
+
+}
+
+#characters {
+  top: 80px;
+  background-image: url(https://upload-os-bbs.hoyolab.com/upload/2022/07/26/169856605/5b05eeab036bfc56e3071a87972eacb0_2993445858013996256.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80);
+
+}
+
+#weapons {
+  top: 140px;
+  background-image: url(https://upload-os-bbs.hoyolab.com/upload/2022/07/26/169856605/5b05eeab036bfc56e3071a87972eacb0_2993445858013996256.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80);
+
+}
+
+#artifacts {
+  top: 200px;
+  background-image: url(https://upload-os-bbs.hoyolab.com/upload/2022/07/26/169856605/5b05eeab036bfc56e3071a87972eacb0_2993445858013996256.png?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_80);
+
 }
