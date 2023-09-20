@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- NAV BAR  -->
-    <div class="container-top">
+    <div class="container-top box-shadow">
       <div class="nav-bar">
         <div class="nav-left flex">
           <img
@@ -25,9 +25,9 @@
         </div>
         <div class="nav-right flex">
           <ol class="flex">
-            <li><a href="#character-select">Characters</a></li>
-            <li><a href="#">Weapons</a></li>
-            <li><a href="#">Artifacts</a></li>
+            <li class="zoom"><a href="#characters-title-block" class="zoom">Characters</a></li>
+            <li class="zoom"><a href="#" class="zoom">Weapons</a></li>
+            <li class="zoom"><a href="#" class="zoom">Artifacts</a></li>
           </ol>
           <img
             class="primogem"
@@ -41,9 +41,14 @@
 
     <!-- BLOCK 1  -->
     <div class="container">
+      <div class="block-1 standard titleblock">
+        <h1 id="characters-title-block" class="title">Characters</h1>
+      </div>
+
+      <!-- CHARACTER  -->
       <div id="backGrab0" class="block-1 standard">
         <img
-          class="character-image"
+          class="character-image zoom"
           id="dynamicCharPhoto"
           src="./assets/otherImages/Empty.png"
           alt=""
@@ -55,7 +60,7 @@
             name="Characters"
             id="character-select"
           >
-            <option select disabled>Click to Select Character</option>
+            <option selected disabled>Click to Select Character</option>
             <option value="albedo">Albedo</option>
             <option value="aloy">Aloy</option>
             <option value="amber">Amber</option>
@@ -125,7 +130,7 @@
             <h3 id="charWeaponType"></h3>
             <h2 id="charRarity"></h2>
             <img
-              id="stars"
+              id="stars" class="stars zoom"
               src="./assets/otherImages/Empty.png"
               alt="placeholder"
             />
@@ -174,20 +179,19 @@
       </div>
 
       <!-- WEAPON SQUARE  -->
-      <div class="block-1 standard titleblock">
+      <div class="block-1 standard titleblock2">
         <h1 class="title">Weapons</h1>
       </div>
-      <div class="block-1 standard">
+      <div id="dynamicStarBackdrop" class="block-1 standard">
         <div class="character-block-right">
           <h1>Weapon Lookup</h1>
           <select onchange="getWeaponData(this.value)">
-            <option select disabled>Click to Select Weapon</option>
+            <option selected disabled>Click to Select Weapon</option>
             <option value="akuoumaru">Akuoumaru</option>
             <option value="alley-hunter">Alley Hunter</option>
             <option value="amber-catalyst">Amber Catalyst</option>
             <option value="amenoma-kageuchi">Amenoma Kageuchi</option>
             <option value="amos-bow">Amos Bow</option>
-            <option value="apprentice-s-notes">Apprentice's Notes</option>
             <option value="aquila-favonia">Aquila Favonia</option>
             <option value="beginner-s-protector">Beginner's Protector</option>
             <option value="black-tassel">Black Tassel</option>
@@ -215,7 +219,7 @@
             <option value="elegy-for-the-end">Elegy for the End</option>
             <option value="emerald-orb">Emerald Orb</option>
             <option value="engulfing-lightning">Engulfing Lightning</option>
-            <option value="eberlasting-moonglow">Everlasting Moonglow</option>
+            <option value="everlasting-moonglow">Everlasting Moonglow</option>
             <option value="eye-of-perception">Eye of Perception</option>
             <option value="favonius-codex">Favonius Codex</option>
             <option value="favonius-greatsword">Favonius Greatsword</option>
@@ -335,23 +339,23 @@
             <option value="wine-and-song">Wine and Song</option>
             <option value="wolf-s-gravestone">Wolf's Gravestone</option>
           </select>
-          <h1 id="weaponName">Name</h1>
-          <h3 id="weaponType">Type</h3>
+          <h1 id="weaponName">Select weapon</h1>
+          <h3 id="weaponType"> </h3>
           <hr>
-          <h3 id="weaponRarity">Rarity</h3>
-          <img id="dynamicStar" src="./assets/otherImages/5star.png" alt="PLaceholder">
-          <h1 id="weaponBaseAttk">Base Attack</h1>
-          <h3 id="weaponSubStat">SubStat</h3>
-          <h3 id="weaponPassName">Passive Name</h3>
-          <p id="weaponPassDesc">Passive Description</p>
-          <h4 id="weaponAscMat">Ascension Material</h4>
+          <h1 id="weaponRarity"> </h1>
+          <img id="dynamicStar" class="stars zoom" src="./assets/otherImages/Empty.png" alt="PLaceholder">
+          <h1 id="weaponBaseAttk"> </h1>
+          <h3 id="weaponSubStat">Select a weapon to view more</h3>
+          <h3 id="weaponPassName"> </h3>
+          <p id="weaponPassDesc"> </p>
+          <h4 id="weaponAscMat"> </h4>
         </div>
-        <img id="dynamicWeapon" src="./assets/weapons/akuoumaru.png" alt="PLaceholder">
+        <img id="dynamicWeapon" class="zoom" src="./assets/weapons/empty.png" alt="PLaceholder">
       </div>
       <!-- SIDE NAV BAR  -->
       <div id="mySidenav" class="sidenav">
         <a href="#" id="home">Home</a>
-        <a href="#" id="characters">Characters</a>
+        <a href="characters-title-block" id="characters">Characters</a>
         <a href="#" id="weapons">Weapons</a>
         <a href="#" id="artifacts">Artifacts</a>
       </div>

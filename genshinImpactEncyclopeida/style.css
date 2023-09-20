@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&family=Signika&family=Sriracha&display=swap");
 body {
-  background-color: lavender;
+  background-color: darkslateblue;
+  /* background-color: lavender; */
 }
 
 * {
@@ -28,47 +29,100 @@ body {
 .padding {
   padding: 5px 10px;
 }
+.box-shadow {
+  box-shadow: 2px 2px 2px black;
+  border: 2px solid black;
+}
 
 .standard {
   background-color: lavenderblush;
-  border: 2px solid lightpink;
-  box-shadow: inset 0px 0px 10px lightpink;
+  background-image: url(https://images4.alphacoders.com/109/1099190.png);
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 10px slateblue, 2px 2px 2px black;
+  box-shadow: 2px 2px 2px black;
 }
 .Dendro {
   background-color: palegreen;
-  border: 2px solid green;
-  box-shadow: inset 0px 0px 10px green;
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 10px green, 2px 2px 2px black;
+
 }
 .Hydro {
   background-color: lightseagreen;
-  border: 2px solid blue;
-  box-shadow: inset 0px 0px 10px blue;
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 10px blue, 2px 2px 2px black;
 }
 .Cryo {
   background-color: lightskyblue;
-  border: 2px solid dodgerblue;
-  box-shadow: inset 0px 0px 10px dodgerblue;
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 10px dodgerblue, 2px 2px 2px black;
 }
 .Pyro {
   background-color: lightcoral;
-  border: 2px solid red;
-  box-shadow: inset 0px 0px 10px red;
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 10px red, 2px 2px 2px black;
 }
 .Anemo {
   background-color: lightcyan;
-  border: 2px solid lightblue;
-  box-shadow: inset 0px 0px 10px lightblue;
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 10px lightblue, 2px 2px 2px black;
 }
 .Geo {
   background-color: lightgoldenrodyellow;
-  border: 2px solid goldenrod;
-  box-shadow: inset 0px 0px 10px goldenrod;
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 10px goldenrod, 2px 2px 2px black;
 }
 .Electro {
   background-color: mediumorchid;
-  border: 2px solid rebeccapurple;
-  box-shadow: inset 0px 0px 10px rebeccapurple;
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 10px rebeccapurple, 2px 2px 2px black;
 }
+
+.star3 {
+  background-image: url(https://preview.redd.it/1jlnjvd3n8z61.png?width=1080&crop=smart&auto=webp&s=a5a1b6b52b91f39f9e4a50e9ba032e56bbe171ee);
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 10px dodgerblue, 2px 2px 2px black;
+  color: white;
+  /* background-size: cover; */
+  background-size:100% 100%;
+
+
+}
+.star4 {
+  background-image: url(https://preview.redd.it/0emwjxd3n8z61.png?width=1080&crop=smart&auto=webp&s=181d7ae1369cc19b7b912abb424024c51bfb1b55);
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 10px plum, 2px 2px 2px black;
+  color: white;
+  /* background-size: cover; */
+  background-size:100% 100%;
+
+  
+}
+.star5 {
+  background-image: url(https://preview.redd.it/ld46ksd3n8z61.png?width=1080&crop=smart&auto=webp&s=ed556e71d773bbc79bbca0cbc2d24e4537589973);
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 10px goldenrod, 2px 2px 2px black;
+  color: white;
+  /* background-size: cover; */
+  background-size:100% 100%;
+}
+.star2 {
+  background-image: url(https://preview.redd.it/d07rrwd3n8z61.png?width=1080&crop=smart&auto=webp&s=b40a60d653b83d030743a29e7b6e52273932b1fd);
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 10px black, 2px 2px 2px black;
+  color: white;
+  /* background-size: cover; */
+  background-size:100% 100%;
+}
+.star1 {
+  background-image: url(https://preview.redd.it/5kmrqud3n8z61.png?width=1080&crop=smart&auto=webp&s=feebdd638d466385abff03021d60f2bbc6c6d01b);
+  border: 2px solid black;
+  box-shadow: inset 0px 0px 10px black, 2px 2px 2px black;
+  color: white;
+  /* background-size: cover; */
+  background-size:100% 100%;
+}
+
 
 /* NAV BAR  */
 .nav-bar {
@@ -109,10 +163,10 @@ ol a {
   margin: 150px 10px;
   font-size: 60px;
   text-shadow:
-  1px 1px 0 #000,
-  -1px 1px 0 #000,
-  -1px -1px 0 #000,
-  1px -1px 0 #000;
+  2px 2px 0 #000,
+  -2px 2px 0 #000,
+  -2px -2px 0 #000,
+  2px -2px 0 #000;
 }
 
 /* CONTENT  */
@@ -138,6 +192,8 @@ ol a {
   height: 700px;
   width: auto;
   margin: 10px;
+  -webkit-filter: drop-shadow(0px 0px 8px white);
+  filter: drop-shadow(0px 0px 8px white);
 }
 
 .name-bar {
@@ -188,13 +244,14 @@ hr {
 #characterImageFull {
   width: auto;
   height: 300px;
-  /* position: relative; */
-  /* bottom: 100px; */
-  /* left: 0px; */
+  -webkit-filter: drop-shadow(0px 0px 8px white);
+  filter: drop-shadow(0px 0px 8px white);
 }
-#stars {
+.stars {
   height: 20px;
   width: auto;
+  -webkit-filter: drop-shadow(0px 0px 8px goldenrod);
+  filter: drop-shadow(0px 0px 8px goldenrod);
 }
 .primogem2 {
   height: 30px;
@@ -206,14 +263,38 @@ hr {
 }
 
 /* WEAPONS */
-.titleblock {
+.titleblock2 {
   height: 350px;
   width: auto;
-  background-image: url(https://i.redd.it/b5emkqe99qh71.png);
+  background-image: url(https://i.etsystatic.com/25476150/r/il/65811d/3935965596/il_fullxfull.3935965596_hgow.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* <= This one */
+
+}
+.titleblock {
+  height: 350px;
+  width: auto;
+  background-image: url(https://i.redd.it/wxfwnzmxwi381.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* <= This one */
+
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+#dynamicWeapon {
+  width: auto;
+  height: 500px;
+  -webkit-filter: drop-shadow(0px 0px 8px white);
+  filter: drop-shadow(0px 0px 8px white);
 
 }
 
@@ -227,7 +308,9 @@ hr {
   text-decoration: none; /* Remove underline */
   font-size: 20px; /* Increase font size */
   color: white; /* White text color */
-  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+
+  border: 2px solid black;
+  box-shadow: 2px 2px 2px black;
 }
 /* SLIDENAV BAR  */
 #mySidenav a:hover {
